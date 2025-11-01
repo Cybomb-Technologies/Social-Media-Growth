@@ -125,7 +125,7 @@ const Dashboard = () => {
   const fetchUsers = async () => {
     try {
       const token = localStorage.getItem("token");
-      const response = await fetch(`${API_URL}/api/auth/users`, {
+      const response = await fetch(`${API_URL}/api/auth`, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
